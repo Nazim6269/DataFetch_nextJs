@@ -11,14 +11,14 @@ export default function Home() {
     push(`/prediction/${value}`);
   };
   return (
-    <main className="flex justify-center items-center">
+    <main className="min-h-screen flex justify-center items-center bg-gray-200">
       <div className="w-full max-w-xs">
         <form
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           onSubmit={handleSubmit}
         >
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 text-md font-bold mb-2">
               Username
             </label>
             <input
@@ -31,14 +31,14 @@ export default function Home() {
             />
 
             <button
-              className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="shadow w-full bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
               Predict
             </button>
           </div>
         </form>
-        <p className="text-center text-gray-500 text-xs">
+        <p className="text-center text-gray-500 text-xs font-semibold">
           &copy;2024 NazimUddin All rights reserved.
         </p>
       </div>
